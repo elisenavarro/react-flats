@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
-//stateful component
 class Flat extends Component {
-  //select single flat from FlatList
-  handleClick = () => {
+  handleClick = (props) => {
     this.props.selectFlat(this.props.index);
   }
 

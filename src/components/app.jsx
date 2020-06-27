@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GoogleMapReact from 'google-map-react';
 
 import flats from '../../data/flats';
 import FlatList from './flat_list';
@@ -26,11 +27,9 @@ class App extends Component {
     };
   }
 
-  // BUILD AND RETURN HTML
   render() {
     return (
       <div>
-        {/* reference the child FlatList component */}
         <FlatList
           flats={this.state.flats}
           selectedFlat={this.state.selectedFlat}
