@@ -1,12 +1,10 @@
 import React from 'react';
 import Flat from './flat';
-// return list of flats
 
 const FlatList = (props) => {
   const renderList = () => {
     return props.flats.map((flat, index) => {
       return (
-        // Flat is child component
         <Flat
           flat={flat}
           key={flat.lat}
@@ -17,7 +15,7 @@ const FlatList = (props) => {
       );
     });
   };
-  // return the FlatList
+
   return (
     <div className="flat-list">
       {renderList()}
